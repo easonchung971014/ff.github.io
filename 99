@@ -1,0 +1,180 @@
+<html>
+<head>
+<meta charset="UTF-8>
+<title>99</title>
+<script src="//unpkg.com/@triggerjs/trigger" defer></script>
+<style>
+body{
+  background-image: conic-gradient(
+  #0f2257,
+  #1d41a5,
+  #1d3782,
+  #90f1fe,
+  #1145c1,
+  #06153e,
+  #06153e);
+background-size: cover; 
+  background-attachment: fixed;  
+  min-height: 100vh;
+  mardin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica;
+}
+
+#container{
+  
+  
+  margin: 100vh 0;
+  font-size: 3.4rem;
+  font-width: 600;
+  letter-spacing: -1.2px;
+  color: #fff;
+  line-height: 1.22em;
+  width: 800px;
+}
+
+span{
+  --opacity: 0.3;
+  opacity: var(--opacity);
+}
+
+.pro{
+  display: block;
+  margin-top: 2.2rem;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.check{
+  background-color: white;
+  background-size: cover;
+  padding: 10px;
+  
+  transform: center;
+  width: 1000px;
+  
+  
+}
+
+.put{
+  transform: translateX(-110px);
+}
+
+.h3{
+  text-align: center;
+    transform: translateY(-80px);
+
+}
+
+
+h2{
+  font-family: Helvetica;
+  font-size: 36px;
+  margin-top: 40px;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+ 
+}
+
+.circle{
+  stroke-dasharray: 1194;
+  stroke-dashoffset: 1194;
+  
+}
+
+input[type="checkbox"]:checked + svg .circle{
+  animation: circle 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.tick{
+  stroke-dasharray: 350;
+  stroke-dashoffset: 350;
+}
+
+input[type="checkbox"]:checked + svg .tick{
+  animation: tick .8s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: .95s;
+}
+
+@keyframes circle {
+  from{
+    stroke-dashoffset: 1194;
+  }
+  to{
+    stroke-dashoffset: 2388;
+  }
+
+}
+
+@keyframes tick{
+  from{
+    stroke-dashoffset: 350;
+  }
+  to{
+    stroke-dashoffset: 0;
+  }
+  
+}
+
+/* .po{
+  background-color: white;
+  background-size: cover;
+  padding: 10px;
+  border-radius: 20px;
+  transform: center;
+  }
+
+.po h3{
+  color: transparent;
+} */
+
+.all{
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+@media (max-width:600px){
+  .container span{
+    font-size: 40px;
+  }
+}
+</style>
+</head>
+<body>
+<div id="container" tg-name="opacity" tg-ref="container"tg-from="1" tg-to="10" tg-step="1">
+  <span  tg-name="opacity" tg-filter="2!" tg-map="2: 1" tg-follow="container">CTPG純正調理認證的doterra精油</span>
+  <span  tg-name="opacity" tg-filter="3!" tg-map="3: 1" tg-follow="container">追求純粹pure</span>
+  <span  tg-name="opacity" tg-filter="4!" tg-map="4: 1" tg-follow="container">胖達的香氛星球www.pangdafp.com</span>
+  <span  tg-name="opacity" tg-filter="5!" tg-map="5: 1" tg-follow="container">pangda's planet</span>
+  <span  tg-name="opacity" tg-filter="6!" tg-map="6: 1" tg-follow="container">iPhone 13 Pro</span>
+  <span class="pro" tg-name="opacity" tg-filter="6,7" tg-map="6: 0.3; 7: 1" tg-follow="container">Let's Go.</span>
+  
+  
+</div>
+
+<div class="all">
+  
+<div class="check" align="center">
+  <input type="checkbox" checked>
+<svg width="400" height="400">
+  <circle fill="none" stroke="#40D441" stroke-width="20" cx="200" cy="200" r="190" class="circle" stroke-linecap="round" transform="rotate(-90 200 200)"/>
+  <polyline fill="none" stroke="#40D441" stroke-width="24" points="88,214 173,284 304,138" stroke-linecap="round" stroke-linejoin="round" class="tick" />
+</svg><h2>PFP認證</h2>
+</div> 
+</div>
+</body>
+</html>
+
